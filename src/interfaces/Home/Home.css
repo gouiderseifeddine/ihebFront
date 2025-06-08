@@ -1,0 +1,121 @@
+.home-container {
+  padding: 2rem;
+  font-family: 'Lato', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Section Pourquoi choisir */
+.why-bna-section {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding-top: 30px;
+}
+
+.why-bna-section h2 {
+  font-size: 2rem;
+  color: #2f479a;
+  margin-bottom: 2rem;
+}
+
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.feature {
+  width: 260px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  color: #f78f1e;
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  font-size: 0.95rem;
+}
+
+/* Section Univers */
+.univers-section {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.univers-section h2 {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.univers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.univers-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.univers-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+.univers-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid #2f479a20;
+}
+
+.univers-card h3 {
+  font-size: 1.1rem;
+  margin: 1rem 0 0.5rem;
+  color: #2f479a;
+}
+
+.univers-card p {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+
+.univers-button {
+  margin-top: auto;
+  padding: 0.5rem 1.2rem;
+  background-color: #f78f1e;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.univers-button:hover {
+  background-color: #d97509;
+}

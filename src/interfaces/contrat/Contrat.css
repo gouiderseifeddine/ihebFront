@@ -1,0 +1,54 @@
+.ajouter-contrat-container {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.ajouter-contrat-container h2 {
+  text-align: center;
+  color: #002855;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.formulaire-contrat {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.formulaire-contrat input,
+.formulaire-contrat select {
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  transition: 0.3s;
+}
+
+.formulaire-contrat input:focus,
+.formulaire-contrat select:focus {
+  border-color: #0077cc;
+  outline: none;
+  background-color: #fff;
+}
+
+.formulaire-contrat button {
+  padding: 14px;
+  background: linear-gradient(to right, #0077cc, #00b4db);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formulaire-contrat button:hover {
+  background: linear-gradient(to right, #005999, #009bbd);
+}

@@ -1,0 +1,100 @@
+/* EspaceAgentDashboard.css - Version avancée avec animations et améliorations supplémentaires */
+
+.dashboard-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+  padding-top: 5%;
+  margin: 40px auto;
+  max-width: 800px;
+  background: linear-gradient(135deg, #f0f4f8, #d9e6f2); /* Dégradé subtil pour le fond */
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards; /* Animation d'apparition */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.dashboard-container h2 {
+  margin-bottom: 30px;
+  color: #003366;
+  font-weight: 600;
+}
+
+.back-button {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #006bb3;
+  border: none;
+  border-radius: 50px; /* Forme arrondie pour un effet moderne */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  animation: slideIn 0.6s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.back-button:hover {
+  background-color: #004d80;
+  transform: translateY(-3px) scale(1.05); /* Ajout d'un léger zoom au survol */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 102, 179, 0.6);
+}
+
+.dashboard-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.dashboard-buttons button {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: #005ea2;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.dashboard-buttons button:hover {
+  background-color: #003f73;
+  transform: translateY(-3px) scale(1.03); /* Ajout d'un effet zoom léger */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}

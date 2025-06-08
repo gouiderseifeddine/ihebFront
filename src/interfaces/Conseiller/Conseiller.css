@@ -1,0 +1,40 @@
+.conseiller-map-container {
+  max-width: 1200px;
+  max-height: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f5f5f5; /* Fond léger pour bien séparer la carte du reste */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre douce autour de la carte */
+}
+
+.conseiller-map-container h2 {
+  color: #003366;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+#map-container {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre autour de la carte */
+  background-color: #fff; /* Fond blanc pour la carte */
+}
+
+/* Style des marqueurs de la carte */
+.marker {
+  background-color: #ff6600; /* Orange Maghrebia */
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.marker:hover {
+  background-color: #003366; /* Bleu marine lors du survol */
+  cursor: pointer;
+}

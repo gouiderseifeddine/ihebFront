@@ -1,0 +1,87 @@
+.ajouter-offre-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  padding-top: 4%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.btn-retour {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  background-color: #f0f0f0;
+  border: none;
+  color: #003366;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-retour:hover {
+  background-color: #d9d9d9;
+}
+
+h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-offre {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-offre input,
+.form-offre textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+}
+
+.btn-ajouter {
+  background-color: #005ea2;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-ajouter:hover {
+  background-color: #003f73;
+}
+
+.liste-offres {
+  margin-top: 40px;
+}
+
+.offre-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.offre-card h4 {
+  margin-bottom: 10px;
+  color: #005ea2;
+}
+
+.offre-card .details {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  margin-top: 10px;
+}

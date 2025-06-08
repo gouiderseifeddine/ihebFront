@@ -1,0 +1,122 @@
+.offres-container {
+  padding-top: 4%;
+  padding: 60px 30px;
+  background: linear-gradient(135deg, #f1f6fc, #ffffff);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.offres-title {
+  text-align: center;
+  padding-top: 3%;
+  color: #002855;
+  font-size: 32px;
+  margin-bottom: 50px;
+  font-weight: 600;
+  position: relative;
+}
+
+.offres-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background-color: #ff6a00;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+.offres-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.offre-card {
+  background: linear-gradient(to bottom, #ffffff, #f9fbff);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 25px 30px;
+  transition: all 0.3s ease;
+  border-top: 6px solid #0056b3;
+  position: relative;
+}
+
+.offre-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.offre-card h3 {
+  font-size: 22px;
+  color: #002855;
+  margin-bottom: 10px;
+}
+
+.offre-card .prix {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff6a00;
+  margin-bottom: 18px;
+}
+
+.start-date{
+  font-size: 14px;
+  color: #ff6a00;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.offre-card ul {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.offre-card ul li {
+  padding: 6px 0;
+  color: #333;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.offre-card ul li::before {
+  content: "✔";
+  margin-right: 8px;
+  color: #007bff;
+}
+
+.offre-card button {
+  background: linear-gradient(to right, #ff6a00, #ff934a);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.offre-card button:hover {
+  background: linear-gradient(to right, #e55c00, #ff7a29);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .offres-title {
+    font-size: 24px;
+  }
+
+  .offre-card h3 {
+    font-size: 18px;
+  }
+
+  .offre-card .prix {
+    font-size: 16px;
+  }
+}
